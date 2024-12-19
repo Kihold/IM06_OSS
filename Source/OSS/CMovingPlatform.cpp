@@ -2,9 +2,10 @@
 
 ACMovingPlatform::ACMovingPlatform()
 {
-	Speed = 200.f;
-
+	PrimaryActorTick.bCanEverTick = true;
 	SetMobility(EComponentMobility::Movable);
+
+	Speed = 10.f;
 }
 
 void ACMovingPlatform::Tick(float DeltaTime)

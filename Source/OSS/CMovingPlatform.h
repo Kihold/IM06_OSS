@@ -8,13 +8,19 @@ UCLASS()
 class OSS_API ACMovingPlatform : public AStaticMeshActor
 {
 	GENERATED_BODY()
-	
+
 public:
 	ACMovingPlatform();
 
+protected:
+	virtual void BeginPlay() override;
+
+public:
 	virtual void Tick(float DeltaTime) override;
+
 
 private:
 	UPROPERTY(EditAnywhere, Category = "Moving")
-	float Speed;
+		float Speed;
 };
+
