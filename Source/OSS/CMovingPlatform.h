@@ -22,5 +22,12 @@ public:
 private:
 	UPROPERTY(EditAnywhere, Category = "Moving")
 		float Speed;
+
+	UPROPERTY(EditAnywhere, Category = "Moving", meta = (MakeEditWidget))
+		FVector TargetLS;
+
+private:
+	FVector StartWS;
+	FVector TargetWS;
 };
 
