@@ -8,6 +8,14 @@ public class OSS : ModuleRules
 
 		PublicIncludePaths.Add(ModuleDirectory);
 
-		PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine", "InputCore", "HeadMountedDisplay" });
+		PublicDependencyModuleNames.AddRange(new string[]
+		{
+			"Core",
+			"CoreUObject",
+			"Engine", 
+			"InputCore", 
+			"HeadMountedDisplay",
+			"UMG"
+		});
 	}
 }
