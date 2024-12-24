@@ -26,7 +26,12 @@ public:
 	UFUNCTION(BlueprintCallable, Exec)
 	void LoadMainMenu();
 
+	UFUNCTION(BlueprintCallable, Exec)
+	void LoadPauseMenu();
+
 private:
 	TSubclassOf<UUserWidget> MainMenuClass;
 	UCMainMenu* MainMenu;
+
+	TSubclassOf<UUserWidget> PauseMenuClass;
 };
